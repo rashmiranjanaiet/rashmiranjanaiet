@@ -1,4 +1,4 @@
-name: Generate Contribution Games
+name: Generate Snake Animation
 
 on:
   schedule:
@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  games:
+  snake:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -29,31 +29,11 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/ocean.gif?palette=github-dark
 
-      - name: Generate pacman assets
-        id: pacman
-        uses: abozanona/pacman-contribution-graph@main
-        continue-on-error: true
-        with:
-          github_user_name: rashmiranjanaiet
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Ensure game assets exist
-        if: always()
-        run: |
-          mkdir -p dist
-          if [ ! -f dist/pacman-contribution-graph.svg ]; then
-            cp dist/github-contribution-grid-snake.svg dist/pacman-contribution-graph.svg
-          fi
-          if [ ! -f dist/pacman-contribution-graph-dark.svg ]; then
-            cp dist/github-contribution-grid-snake-dark.svg dist/pacman-contribution-graph-dark.svg
-          fi
-
       - name: Publish to output branch
-        if: always()
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "chore: update contribution game assets"
+          commit_message: "chore: update snake animation assets"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

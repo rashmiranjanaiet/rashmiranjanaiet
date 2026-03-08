@@ -31,6 +31,16 @@
 
 ## About Me
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=700&color=36BCF7&center=true&vCenter=true&width=980&lines=Currently+building+AI+engineering+and+robotics+systems;Learning+advanced+AI%2C+system+architecture%2C+and+full-stack+development;Open+to+collaboration+on+real-time+cyber+and+global+data+visualization" alt="about typing animation"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Current%20Focus-AI%20Engineering-00b4d8?style=for-the-badge" alt="focus ai"/>
+  <img src="https://img.shields.io/badge/Building-Robotics%20Systems-2a9d8f?style=for-the-badge" alt="building robotics"/>
+  <img src="https://img.shields.io/badge/Exploring-Real--Time%20Cyber%20Visualization-f4a261?style=for-the-badge" alt="exploring cyber"/>
+</p>
+
 <table>
   <tr>
     <td width="56%">
@@ -107,7 +117,8 @@
 ## Highlights
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rashmiranjanaiet&theme=algolia&no-frame=true&no-bg=true&row=1&column=7" alt="trophies"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rashmiranjanaiet&theme=tokyonight" alt="stats card"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rashmiranjanaiet&theme=tokyonight" alt="profile card"/>
 </p>
 
 <p align="center">
@@ -116,20 +127,12 @@
 
 ---
 
-## <a id="animations"></a>Game Arena
+## <a id="animations"></a>Snake Arena
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Game%20Mode-Pac--Man-ffcc00?style=for-the-badge" alt="pacman mode"/>
-  <img src="https://img.shields.io/badge/Game%20Mode-Snake%20Grid-22c55e?style=for-the-badge" alt="snake mode"/>
-  <img src="https://img.shields.io/badge/Level-BOSS%20VISUALS-ef4444?style=for-the-badge" alt="boss visuals"/>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rashmiranjanaiet/rashmiranjanaiet/output/pacman-contribution-graph-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rashmiranjanaiet/rashmiranjanaiet/output/pacman-contribution-graph.svg"/>
-    <img alt="pacman contribution game" src="https://raw.githubusercontent.com/rashmiranjanaiet/rashmiranjanaiet/output/pacman-contribution-graph-dark.svg"/>
-  </picture>
+  <img src="https://img.shields.io/badge/Animation-Snake%20Grid-22c55e?style=for-the-badge" alt="snake mode"/>
+  <img src="https://img.shields.io/badge/Theme-Dark%20%2F%20Light-0ea5e9?style=for-the-badge" alt="theme mode"/>
+  <img src="https://img.shields.io/badge/Auto%20Update-12h%20Workflow-ef4444?style=for-the-badge" alt="auto update"/>
 </p>
 
 <p align="center">
