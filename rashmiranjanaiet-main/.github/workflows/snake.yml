@@ -1,0 +1,43 @@
+name: Generate Contribution Games
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  games:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake assets
+        uses: Platane/snk@v3
+        with:
+          github_user_name: rashmiranjanaiet
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?palette=github-dark
+
+      - name: Generate pacman assets
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: rashmiranjanaiet
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: update contribution game assets"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
