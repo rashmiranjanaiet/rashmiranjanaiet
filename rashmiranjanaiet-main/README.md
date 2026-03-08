@@ -29,17 +29,17 @@
 
 ---
 
-## About
+## About Me
 
 <table>
   <tr>
     <td width="56%">
 
-- AI developer focused on production-ready solutions.
-- Robotics builder for automation and control systems.
-- Security-minded engineer for resilient AI workflows.
-- Strong interest in clean interface design and developer UX.
-- Building practical projects with measurable impact.
+- I am currently working on AI engineering projects, robotics systems, and real-time cyber visualization tools.
+- Right now I am learning advanced AI systems, robotics development, system architecture, and full-stack web technologies.
+- I am open to collaborating on AI projects, cybersecurity visualization platforms, and robotics innovations.
+- I am also looking for guidance and collaboration on advanced robotics development and real-time global data visualization systems.
+- I am a Computer Science student at Aryan Institute of Engineering & Technology, Bhubaneswar.
 
   </td>
     <td width="44%" align="center">
@@ -47,6 +47,22 @@
     </td>
   </tr>
 </table>
+
+- All of my projects are available at: <a href="https://github.com/rashmiranjanaiet">github.com/rashmiranjanaiet</a>
+- You can ask me about AI engineering, web development, real-time data systems, JavaScript, React, and system design.
+- How to reach me: <a href="mailto:rashmiranjanaiet@gmail.com">rashmiranjanaiet@gmail.com</a>
+
+### Projects I Am Building
+
+- AI engineering platforms
+- Cyber attack visualization globe
+- Real-time flight tracking system
+- Web2 e-learning platform
+- Robotics research projects
+
+### Fun Fact
+
+- I enjoy building futuristic systems that combine AI, robotics, and real-time global data visualization.
 
 ---
 
@@ -139,7 +155,7 @@
   <a href="mailto:rashmiranjanaiet@gmail.com">
     <img src="https://img.shields.io/badge/Email-0A66C2?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/>
   </a>
-  <a href="https://www.linkedin.com/in/">
+  <a href="https://www.linkedin.com/in/rashmiranjan-behera-566254352">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/>
   </a>
 </p>
