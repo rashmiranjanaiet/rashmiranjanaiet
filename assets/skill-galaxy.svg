@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+<title id="title">Animated skill galaxy</title>
+<desc id="desc">Eight technology groups rotate through a neon dashboard, representing 51 technologies in a learning roadmap.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020617"/><stop offset="0.54" stop-color="#0f172a"/><stop offset="1" stop-color="#083344"/></linearGradient>
+  <linearGradient id="accent"><stop stop-color="#22d3ee"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#22d3ee" stop-opacity=".22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+  <style>
+    .mono{font-family:ui-monospace,Consolas,monospace;letter-spacing:1.4px}
+    .sans{font-family:Arial,Helvetica,sans-serif}
+    .orbit {transform-origin:210px 205px;animation:spin 35s linear infinite}
+    .orbit2 {transform-origin:210px 205px;animation:spin 26s linear infinite reverse}
+    .pulse{animation:pulse 4s ease-in-out infinite}
+    .blink{animation:blink 1.7s ease-in-out infinite}
+    .sweep{animation:sweep 6s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pulse{50%{opacity:.4;transform:scale(.95)}}
+    @keyframes blink{50%{opacity:.18}}
+    @keyframes sweep{from{transform:translateX(-140px)}to{transform:translateX(1120px)}}
+  </style>
+</defs>
+<rect width="1100" height="390" rx="22" fill="url(#bg)"/>
+<rect x="1" y="1" width="1098" height="388" rx="21" fill="none" stroke="#164e63" stroke-width="2"/>
+<rect y="76" width="1100" height="1" fill="#1e3a5f"/>
+<circle cx="205" cy="210" r="178" fill="url(#glow)"/>
+<circle cx="210" cy="205" r="75" fill="none" stroke="#164e63" stroke-width="1"/>
+<circle cx="210" cy="205" r="115" fill="none" stroke="#155e75" stroke-dasharray="6 12" stroke-width="1.3" class="orbit"/>
+<circle cx="210" cy="205" r="145" fill="none" stroke="#7c3aed" stroke-dasharray="1 12" stroke-width="2" class="orbit2"/>
+<g class="orbit"><circle cx="210" cy="90" r="9" fill="#22d3ee"/><circle cx="210" cy="90" r="20" fill="#22d3ee" opacity=".23"/></g>
+<g class="orbit2"><circle cx="210" cy="60" r="6" fill="#a78bfa"/></g>
+<circle cx="210" cy="205" r="61" fill="#0e7490" opacity=".12"/>
+<text x="210" y="191" text-anchor="middle" class="mono" font-size="47" font-weight="bold" fill="#e2f7ff">51</text>
+<text x="210" y="217" text-anchor="middle" class="mono" font-size="13" fill="#67e8f9">TECHNOLOGIES</text>
+<text x="210" y="238" text-anchor="middle" class="mono" font-size="12" fill="#c4b5fd">8 DOMAINS</text>
+<text x="37" y="37" class="mono" font-size="15" fill="#67e8f9">// TECH STACK / ANIMATED</text>
+<text x="38" y="59" class="mono" font-size="10" fill="#64748b">LEARN • BUILD • EXPERIMENT</text>
+<rect x="410" y="94" width="653" height="249" rx="19" fill="#020617" fill-opacity=".45" stroke="#164e63"/>
+<rect x="432" y="121" width="6" height="196" rx="3" fill="url(#accent)"/>
+<text x="466" y="132" class="mono" font-size="13" fill="#67e8f9">NOW EXPLORING</text>
+<g class="sweep" opacity=".2"><rect y="75" width="110" height="1" fill="#67e8f9"/></g>
+<g class="pulse"><circle cx="1043" cy="35" r="5" fill="#34d399"/></g>
+<text x="1028" y="39" text-anchor="end" class="mono" font-size="12" fill="#94a3b8">ROADMAP / ACTIVE</text>
+<g opacity="1"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.115;0.125;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#38bdf8">Frontend &amp; UI</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">5 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">HTML  •  CSS  •  JavaScript  •  Tailwind CSS</text>
+<text x="465" y="264" class="sans" font-size="16" fill="#e2e8f0">React</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.11500;0.12500;0.24000;0.25000;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#a78bfa">Programming Languages</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">2 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Java  •  Python</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24000;0.25000;0.36500;0.37500;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#10b981">Backend, APIs &amp; Databases</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">13 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Spring Boot  •  Maven  •  MySQL  •  Redis</text>
+<text x="465" y="264" class="sans" font-size="16" fill="#e2e8f0">Elasticsearch  •  OAuth2  •  JWT  •  Postman</text>
+<text x="465" y="286" class="sans" font-size="16" fill="#e2e8f0">Swagger  •  Config Server  •  API Gateway</text>
+<text x="465" y="308" class="sans" font-size="16" fill="#e2e8f0">WebSockets  •  Nginx</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36500;0.37500;0.49000;0.50000;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#f59e0b">Event-Driven Systems</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">2 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Kafka  •  RabbitMQ</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.49000;0.50000;0.61500;0.62500;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#e879f9">Generative AI &amp; Agents</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">9 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Generative AI  •  Spring AI  •  Claude Code</text>
+<text x="465" y="264" class="sans" font-size="16" fill="#e2e8f0">Ollama  •  ChromaDB  •  RAG  •  MCP</text>
+<text x="465" y="286" class="sans" font-size="16" fill="#e2e8f0">AI Agents  •  Multimodal AI</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61500;0.62500;0.74000;0.75000;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#60a5fa">DevOps, Cloud &amp; Hosting</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">10 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Git  •  GitHub  •  Linux  •  Docker</text>
+<text x="465" y="264" class="sans" font-size="16" fill="#e2e8f0">Kubernetes  •  Jenkins  •  AWS  •  Vercel</text>
+<text x="465" y="286" class="sans" font-size="16" fill="#e2e8f0">Heroku  •  Hostinger</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.74000;0.75000;0.86500;0.87500;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#fb7185">Testing &amp; Code Quality</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">4 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">JUnit 5  •  Mockito  •  JMeter  •  SonarQube</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.86500;0.87500;1" dur="32s" repeatCount="indefinite"/>
+<text x="465" y="179" class="sans" font-size="30" font-weight="bold" fill="#22d3ee">Monitoring &amp; Observability</text>
+<text x="465" y="204" class="mono" font-size="14" fill="#94a3b8">6 TECHNOLOGIES</text>
+<text x="465" y="242" class="sans" font-size="16" fill="#e2e8f0">Prometheus  •  Grafana  •  Zipkin  •  Logstash</text>
+<text x="465" y="264" class="sans" font-size="16" fill="#e2e8f0">Kibana  •  New Relic</text>
+</g>
+<rect x="468" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="468" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="1"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.115;0.125;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="511" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="511" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.11500;0.12500;0.24000;0.25000;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="554" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="554" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24000;0.25000;0.36500;0.37500;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="597" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="597" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.36500;0.37500;0.49000;0.50000;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="640" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="640" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.49000;0.50000;0.61500;0.62500;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="683" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="683" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.61500;0.62500;0.74000;0.75000;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="726" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="726" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.74000;0.75000;0.86500;0.87500;1" dur="32s" repeatCount="indefinite"/></rect>
+<rect x="769" y="325" width="31" height="4" rx="2" fill="#0e7490" opacity=".5"/>
+<rect x="769" y="325" width="31" height="4" rx="2" fill="#67e8f9" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.86500;0.87500;1" dur="32s" repeatCount="indefinite"/></rect>
+</svg>

@@ -1,13 +1,14 @@
-name: Generate Snake Animation
+name: Generate contribution snake
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Once daily, UTC
   push:
-    branches:
-      - main
-      - master
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/snake.yml
 
 permissions:
   contents: write
@@ -15,25 +16,22 @@ permissions:
 jobs:
   snake:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate snake assets
+      - name: Render animated snakes
         uses: Platane/snk@v3
         with:
           github_user_name: rashmiranjanaiet
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?palette=github-dark
+            dist/ocean.gif?color_snake=#22d3ee&color_dots=#0f172a,#164e63,#0e7490,#22d3ee,#67e8f9&color_background=#0f172a
 
-      - name: Publish to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Publish images to output branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: dist
-          commit_message: "chore: update snake animation assets"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
