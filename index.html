@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="An interactive 3D tour through Rashmi Ranjan Behera's technology roadmap.">
+  <title>Rashmi's Skill Orbit</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f1e8;--ink:#171916;--muted:#77736b;--line:#d8d5cc;--green:#8ddcae;--green-dark:#24885a;--card:#f8f6ef}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+    .wrap{max-width:1440px;margin:auto;padding:28px clamp(18px,4vw,64px) 64px}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand,.navlinks{border:1px solid var(--line);border-radius:999px;background:#f8f6ef;box-shadow:0 6px 18px #25271b12}.brand{padding:10px 22px;font-weight:850;letter-spacing:.1em;font-size:19px}.navlinks{display:flex;align-items:center;gap:6px;padding:6px}.navlinks a{color:#5e5b55;text-decoration:none;padding:10px 16px;border-radius:999px}.navlinks a:hover{background:#e9e7de}.navlinks .cta{background:var(--green);color:#102019;font-weight:750}
+    .hero{max-width:960px;margin:78px auto 38px;text-align:center}.eyebrow{font-size:12px;letter-spacing:.2em;font-weight:800;color:#65645c}.hero h1{font-size:clamp(42px,7vw,82px);line-height:1;letter-spacing:-.06em;margin:12px 0 18px}.hero p{color:var(--muted);font:clamp(17px,2vw,22px)/1.65 Georgia,serif;margin:0 auto;max-width:760px}.hero strong{font-family:inherit;color:#24251f}
+    .stage{position:relative;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#e7f2e7 0,#f4f1e8 63%);height:min(65vw,650px);min-height:500px;box-shadow:0 18px 55px #1d21120d}.stage canvas{position:absolute;inset:0;width:100%;height:100%;outline:none}.stage:after{pointer-events:none;content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid #fff9}
+    .hud{position:absolute;z-index:2;pointer-events:none;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:26px 30px}.hudtop,.hudbottom{display:flex;justify-content:space-between;align-items:center;gap:12px}.mono{font:700 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em;text-transform:uppercase;color:#5e6a60}.live{display:flex;align-items:center;gap:9px}.dot{width:9px;height:9px;border-radius:50%;background:#33bb7d;box-shadow:0 0 0 5px #33bb7d22}.controls{color:#6f7268;font-size:13px}.hint{background:#fff9;border:1px solid #d8d5cc;border-radius:999px;padding:9px 14px}
+    .panel{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;background:#fffdf6dc;border:1px solid #d7d4ca;border-radius:22px;padding:24px 28px;margin-top:18px}.panel small{font:700 11px ui-monospace,monospace;letter-spacing:.17em;color:var(--green-dark);text-transform:uppercase}.panel h2{margin:4px 0 2px;font-size:clamp(24px,3vw,38px);letter-spacing:-.04em}.panel p{margin:0;color:#716d65}.count{text-align:right;font:750 14px ui-monospace,monospace;color:#75766d}.count b{display:block;font-size:30px;color:var(--ink)}
+    .selector{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:18px auto 62px}.selector button{border:1px solid var(--line);background:transparent;color:#55564f;border-radius:999px;padding:9px 14px;font:650 13px inherit;cursor:pointer;transition:.2s}.selector button:hover,.selector button.active{background:#1d2520;color:#f9f7ef;border-color:#1d2520;transform:translateY(-1px)}
+    .below{display:grid;grid-template-columns:1fr 1fr;gap:22px}.info{border-top:1px solid var(--line);padding:23px 4px}.info h3{font-size:19px;margin:0 0 8px}.info p{color:var(--muted);margin:0}.footer{text-align:center;margin-top:52px;color:#77736b}.footer a{color:#263a2e}
+    @media(max-width:720px){.wrap{padding-top:16px}.navlinks a:not(.cta){display:none}.hero{margin:56px auto 28px}.stage{height:570px;min-height:0}.hud{padding:18px}.hudbottom .controls{max-width:200px;text-align:right}.panel{grid-template-columns:1fr;padding:18px}.count{text-align:left}.count b{display:inline;font-size:20px;margin-right:6px}.below{grid-template-columns:1fr;gap:0}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav" aria-label="Main navigation"><a class="brand" href="https://github.com/rashmiranjanaiet" style="color:inherit;text-decoration:none">RASHMI</a><div class="navlinks"><a href="#orbit">Explore</a><a href="#about">About</a><a href="https://github.com/rashmiranjanaiet">GitHub</a><a class="cta" href="mailto:rashmiranjanaiet@gmail.com">Say hello ↗</a></div></nav>
+    <header class="hero"><div class="eyebrow">A SMALL INTERACTIVE EXPERIMENT</div><h1>My skill orbit</h1><p>A map of the tools I’m learning, building with, and curious about. <strong>Pick a domain and explore.</strong></p></header>
+    <section id="orbit" class="stage" aria-label="Interactive 3D technology skill orbit"><div class="hud"><div class="hudtop"><span class="mono">RASHMI / TECH MAP</span><span class="mono live"><i class="dot"></i> 51 skills · 8 domains</span></div><div class="hudbottom"><span class="mono hint">Drag to rotate · click a node</span><span class="mono controls">Scroll to zoom · press 1–8 to switch</span></div></div></section>
+    <section class="panel" aria-live="polite"><div><small id="groupTag">Currently exploring</small><h2 id="groupName">Frontend &amp; UI</h2><p id="groupItems">HTML · CSS · JavaScript · Tailwind CSS · React</p></div><div class="count"><b id="groupCount">05</b> TECHNOLOGIES</div></section>
+    <div class="selector" id="selector" aria-label="Choose technology domain"></div>
+    <section class="below" id="about"><article class="info"><h3>Learn by building</h3><p>This is a learning roadmap, not a list of certifications. The orbit is a playful way to browse the areas I’m exploring.</p></article><article class="info"><h3>Want to build something?</h3><p>I’m open to learning, collaboration, and practical projects. <a href="mailto:rashmiranjanaiet@gmail.com">Get in touch ↗</a></p></article></section>
+    <footer class="footer">Made with curiosity · <a href="https://github.com/rashmiranjanaiet">GitHub profile</a></footer>
+  </main>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js"}}</script>
+  <script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js';
+    import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/controls/OrbitControls.js';
+    const groups=[
+      {name:'Frontend & UI',color:'#2ba773',items:['HTML','CSS','JavaScript','Tailwind CSS','React']},
+      {name:'Programming Languages',color:'#9271ce',items:['Java','Python']},
+      {name:'Backend, APIs & Databases',color:'#13a87e',items:['Spring Boot','Maven','MySQL','Redis','Elasticsearch','OAuth2','JWT','Postman','Swagger','Config Server','API Gateway','WebSockets','Nginx']},
+      {name:'Event-Driven Systems',color:'#db9b2e',items:['Kafka','RabbitMQ']},
+      {name:'Generative AI & Agents',color:'#c66acb',items:['Generative AI','Spring AI','Claude Code','Ollama','ChromaDB','RAG','MCP','AI Agents','Multimodal AI']},
+      {name:'DevOps, Cloud & Hosting',color:'#578dca',items:['Git','GitHub','Linux','Docker','Kubernetes','Jenkins','AWS','Vercel','Heroku','Hostinger']},
+      {name:'Testing & Code Quality',color:'#d76c75',items:['JUnit 5','Mockito','JMeter','SonarQube']},
+      {name:'Monitoring & Observability',color:'#229fa5',items:['Prometheus','Grafana','Zipkin','Logstash','Kibana','New Relic']}
+    ];
+    const stage=document.querySelector('.stage'),scene=new THREE.Scene();scene.background=new THREE.Color('#f1f2e9');
+    const camera=new THREE.PerspectiveCamera(42,1,.1,100);camera.position.set(0,2.2,12);
+    const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;stage.prepend(renderer.domElement);
+    const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.055;controls.minDistance=7;controls.maxDistance=19;controls.maxPolarAngle=Math.PI*.78;controls.target.set(0,0,0);
+    scene.add(new THREE.HemisphereLight('#fffdf3','#64736b',2));const key=new THREE.DirectionalLight('#ffffff',3);key.position.set(4,8,6);scene.add(key);
+    const root=new THREE.Group();scene.add(root);const ringMat=new THREE.MeshStandardMaterial({color:'#9ea99b',roughness:.7,metalness:.12});
+    for(let i=0;i<3;i++){const ring=new THREE.Mesh(new THREE.TorusGeometry(2.3+i*.8,.012,8,160),ringMat);ring.rotation.x=Math.PI/2.35;ring.rotation.y=i*.42;root.add(ring)}
+    const core=new THREE.Mesh(new THREE.IcosahedronGeometry(.9,2),new THREE.MeshStandardMaterial({color:'#b8e8c9',roughness:.28,metalness:.18,flatShading:true}));root.add(core);
+    const coreWire=new THREE.Mesh(new THREE.IcosahedronGeometry(1.05,1),new THREE.MeshBasicMaterial({color:'#51b77c',wireframe:true,transparent:true,opacity:.18}));root.add(coreWire);
+    const starGeo=new THREE.BufferGeometry(),stars=[];for(let i=0;i<280;i++)stars.push((Math.random()-.5)*22,(Math.random()-.5)*15,(Math.random()-.5)*12);starGeo.setAttribute('position',new THREE.Float32BufferAttribute(stars,3));const dust=new THREE.Points(starGeo,new THREE.PointsMaterial({color:'#7d9c83',size:.025,transparent:true,opacity:.65}));scene.add(dust);
+    const nodes=[],raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let selected=0,hovered=null;
+    groups.forEach((g,gi)=>{const orbit=new THREE.Group();root.add(orbit);const angle=gi/groups.length*Math.PI*2,radius=3.6+(gi%2)*.42;orbit.rotation.y=angle;const anchor=new THREE.Group();anchor.position.set(radius,Math.sin(gi*1.7)*.42,0);orbit.add(anchor);
+      const ball=new THREE.Mesh(new THREE.SphereGeometry(.22,24,18),new THREE.MeshStandardMaterial({color:g.color,roughness:.28,metalness:.08,emissive:g.color,emissiveIntensity:.22}));anchor.add(ball);ball.userData.group=gi;nodes.push(ball);
+      const halo=new THREE.Mesh(new THREE.TorusGeometry(.34,.018,8,40),new THREE.MeshBasicMaterial({color:g.color,transparent:true,opacity:.52}));halo.rotation.x=Math.PI/2;anchor.add(halo);
+      const labelCanvas=document.createElement('canvas'),ctx=labelCanvas.getContext('2d');labelCanvas.width=512;labelCanvas.height=112;ctx.font='600 34px system-ui';const text=g.name;const w=Math.min(ctx.measureText(text).width+46,500);labelCanvas.width=512;ctx.font='600 34px system-ui';ctx.fillStyle='#fffdf2';ctx.strokeStyle='#d6d6c8';ctx.lineWidth=3;roundRect(ctx,8,12,w,76,22);ctx.fill();ctx.stroke();ctx.fillStyle='#232720';ctx.textBaseline='middle';ctx.fillText(text,29,52);const tex=new THREE.CanvasTexture(labelCanvas);tex.colorSpace=THREE.SRGBColorSpace;const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));sprite.scale.set(Math.max(1.8,text.length*.11),.4,1);sprite.position.set(0,.72,0);anchor.add(sprite);
+      for(let j=0;j<Math.min(g.items.length,7);j++){const a=j/Math.min(g.items.length,7)*Math.PI*2;const mini=new THREE.Mesh(new THREE.OctahedronGeometry(.065,0),new THREE.MeshStandardMaterial({color:g.color,roughness:.4,emissive:g.color,emissiveIntensity:.14}));mini.position.set(Math.cos(a)*.56,Math.sin(a)*.36,Math.sin(a)*.56);anchor.add(mini)}
+      orbit.userData.speed=(gi%2?-.045:.035)*(1+gi*.04);orbit.userData.anchor=anchor;orbit.userData.index=gi;
+    });
+    function roundRect(c,x,y,w,h,r){c.beginPath();c.roundRect(x,y,w,h,r)}
+    const selector=document.querySelector('#selector');groups.forEach((g,i)=>{const b=document.createElement('button');b.textContent=`${String(i+1).padStart(2,'0')}  ${g.name}`;b.addEventListener('click',()=>select(i));selector.append(b)});
+    function select(i){selected=(i+groups.length)%groups.length;const g=groups[selected];document.querySelector('#groupTag').textContent='Currently exploring';document.querySelector('#groupName').textContent=g.name;document.querySelector('#groupItems').textContent=g.items.join(' · ');document.querySelector('#groupCount').textContent=String(g.items.length).padStart(2,'0');[...selector.children].forEach((b,j)=>b.classList.toggle('active',j===selected));const obj=root.children.find(o=>o.userData.index===selected);if(obj){const world=new THREE.Vector3();obj.userData.anchor.getWorldPosition(world);controls.target.lerp(world,.45)} }
+    select(0);window.addEventListener('keydown',e=>{if(e.key>='1'&&e.key<='8')select(Number(e.key)-1)});
+    renderer.domElement.addEventListener('pointermove',e=>{const r=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height*2-1));raycaster.setFromCamera(pointer,camera);const hits=raycaster.intersectObjects(nodes);renderer.domElement.style.cursor=hits.length?'pointer':'grab';hovered=hits[0]?.object||null});
+    renderer.domElement.addEventListener('click',()=>{if(hovered)select(hovered.userData.group)});
+    function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(stage);resize();
+    const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();root.rotation.y+=.0008;core.rotation.y=t*.18;core.rotation.x=Math.sin(t*.3)*.12;coreWire.rotation.y=-t*.12;dust.rotation.y=t*.006;for(const orbit of root.children){if(orbit.userData.anchor){orbit.rotation.y+=orbit.userData.speed*.002;const idx=orbit.userData.index;orbit.userData.anchor.position.y=Math.sin(t*.7+idx)*.12+(idx%2?-.42:.42);const ball=orbit.userData.anchor.children[0];const target=idx===selected?1.35:1;ball.scale.lerp(new THREE.Vector3(target,target,target),.08);if(hovered===ball)ball.scale.setScalar(1.55)}}controls.update();renderer.render(scene,camera)}animate();
+  </script>
+</body>
+</html>

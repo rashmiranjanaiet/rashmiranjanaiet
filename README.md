@@ -55,7 +55,11 @@
 ## 🌌 Animated Skill Universe
 
 <p align="center">
-<img src="assets/skill-galaxy.svg" width="100%" alt="Animated technology categories with the 51 technologies in my roadmap"/>
+<a href="https://rashmiranjanaiet.github.io/rashmiranjanaiet/"><img src="https://img.shields.io/badge/▶_PLAY_THE_3D_SKILL_ORBIT-8ddcae?style=for-the-badge&labelColor=242820" alt="Play the interactive 3D skill orbit" /></a>
+</p>
+
+<p align="center">
+<a href="https://rashmiranjanaiet.github.io/rashmiranjanaiet/"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:f4f1e8,100:e6eee4&height=120&section=header&text=Explore%20my%20skills%20in%203D&fontSize=32&fontColor=171916&animation=fadeIn" alt="Explore my skills in 3D" /></a>
 </p>
 
 <p align="center">
@@ -66,7 +70,7 @@
 
 ## 🧰 Complete Technology Stack
 
-**51 named technologies** taken from my roadmap PDF: 50 numbered entries plus Python. These represent technologies I am studying, using, or planning to explore—not a claim of expert-level proficiency in every one.
+**51 named technologies** taken from my roadmap PDF: 50 numbered entries plus Python. These are technologies I am studying, using, or planning to explore—not a claim of expert-level proficiency in every one. [Explore them in the interactive 3D skill orbit →](https://rashmiranjanaiet.github.io/rashmiranjanaiet/)
 
 ### Frontend & UI · 5
 
@@ -96,7 +100,7 @@
 ### Backend, APIs & Databases · 13
 
 <p>
-<img src="https://skillicons.dev/icons?i=spring,maven,mysql,redis,elasticsearch,postman,nginx&theme=dark&perline=9" alt="Backend, APIs &amp; Databases technology icons" />
+<img src="https://skillicons.dev/icons?i=spring,maven,mysql,redis,postman,nginx&theme=dark&perline=9" alt="Backend, APIs &amp; Databases technology icons" />
 </p>
 
 <p>
